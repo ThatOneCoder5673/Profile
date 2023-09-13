@@ -204,7 +204,7 @@ word-wrap: break-word;
 Skills
 </h2>
 <div class="circle skills"><p class= "skillsset" onclick="MultiTaskSwitch()" id="multitask">Click<br> Me</p></div>
-<div class="circle skills"><p class= "skillsset" onclick="MultiTaskSwitch1(); colors2()" id="multitask1">Click<br> Me</p></div>
+<div class="circle skills"><p class= "skillsset" onclick="MultiTaskSwitch1(), colors1()" id="multitask1">Click<br> Me</p></div>
 <div class="circle skills"><p class= "skillsset" onclick="MultiTaskSwitch2()" id="multitask2">Show<br> Me</p></div>
 </div>
  </div>
@@ -243,11 +243,12 @@ var x = document.getElementById("multitask1");
   else { x.className = "skillsset";}
   
 }
+
+function colors1() {
 var skills1 = ["Excel","Word","Power Bi","Power Point"];
 var i = 0;
-function colors2() {
 var x = document.getElementById("multitask1"); 
-	if(i === skills1[0]) {x.className = "bottomskill";} 
+	if(i = skills1[0]) {x.className = "bottomskill";} 
   else { x.className = "skillsset";}
 }
 var skills2 = ["Multi Tasking","Problem Solving","Customer Service","Team Player"];
