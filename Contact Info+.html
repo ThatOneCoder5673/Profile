@@ -30,8 +30,6 @@
   border-radius: 50%;
   background-color: black;
   text-align: center;
-  z-index: -1;
-  display: table;
   border-style: solid;
   border-width: 2px;
   border-color: aqua;
@@ -163,7 +161,7 @@ p {
   text-align: center; 
   word-wrap: break-word;
   position: relative;
-  top: 2px;
+  top: 0px;
 }
 .bottomskill {
   font-size: 20px; 
@@ -181,7 +179,7 @@ font-weight: bold;
 color: white; 
 text-align: center; 
 word-wrap: break-word;
-position: relative;
+
 }
 
 </style>
@@ -241,8 +239,8 @@ function MultiTaskSwitch1() {
 var x = document.getElementById("multitask1"); 
     x.innerHTML = skills1[i++];
     if(i == skills1.length) i = 0;
-	if(i = 1|2|3) x.classList = "bottomskill";
-	else { x.classList.replace("bottomskill", "specskill"); }
+	if(i == skills1[0]) x.classList.add("bottomskill").remove("skillsset");
+  
 }
 var skills2 = ["Multi Tasking","Problem Solving","Customer Service","Team Player"];
 var i = 0;
