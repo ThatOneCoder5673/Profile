@@ -179,7 +179,8 @@ font-weight: bold;
 color: white; 
 text-align: center; 
 word-wrap: break-word;
-
+position: relative;
+top: 0px;
 }
 
 </style>
@@ -204,7 +205,7 @@ word-wrap: break-word;
 Skills
 </h2>
 <div class="circle skills"><p class= "skillsset" onclick="MultiTaskSwitch()" id="multitask">Click<br> Me</p></div>
-<div class="circle skills"><p class= "skillsset" onclick="MultiTaskSwitch1()" id="multitask1">Click<br> Me</p></div>
+<div class="circle skills"><p class= "skillsset" onclick="MultiTaskSwitch1();" id="multitask1">Click<br> Me</p></div>
 <div class="circle skills"><p class= "skillsset" onclick="MultiTaskSwitch2()" id="multitask2">Show<br> Me</p></div>
 </div>
  </div>
@@ -238,7 +239,9 @@ var i = 0;
 function MultiTaskSwitch1() {
 var x = document.getElementById("multitask1"); 
     x.innerHTML = skills1[i++];
-    if(i == skills1.length) {i = 0;}
+    if(i == skills1.length) {i = 0;};
+    if(i == skills[1]) {x.className = "bottomskill"}
+    else {x.className = "skillsset"}
   
 }
 
@@ -249,5 +252,6 @@ var x = document.getElementById("multitask2");
     x.innerHTML = skills2[i++];
     if(i == skills2.length)  i = 0;
 }
+
 </script>
 </html>
