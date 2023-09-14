@@ -240,7 +240,7 @@ function MultiTaskSwitch1() {
 var x = document.getElementById("multitask1"); 
     x.innerHTML = skills1[i++];
     if(i == skills1.length) {i = 0;};
-    if(i == skills[0]) {x.className = "bottomskill"}
+    if(i == skills1[0]) {x.classList.replace("skillsset","bottomskill")}
     else {x.className = "skillsset"};
   
 }
