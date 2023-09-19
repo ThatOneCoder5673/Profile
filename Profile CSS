@@ -6,7 +6,6 @@
 
 .material-icons:hover {
   transform: rotate(360deg);
-  
 }
 
 .material-icons {
@@ -73,7 +72,6 @@ p {
 .ClickHide {
  display: none;
  text-align: center;
-
 }
 
 .topnav a#myresume:hover {
@@ -138,7 +136,6 @@ p {
   background-color:gray; 
   padding-bottom: 10px;
   cursor: pointer;
-
 }
 .blackborder {
   border: solid 5px aqua;
@@ -162,7 +159,6 @@ p {
   word-wrap: break-word;
   position: relative;
   top: 15px;
-  
 }
 .skillsset {
 font-size: 20px; 
