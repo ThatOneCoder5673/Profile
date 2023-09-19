@@ -1,10 +1,3 @@
-<html>
-<title>Profile CSS</title>
-<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-<style>
-
 .llogo {
   width: 450px;
   height: 450px;
@@ -180,6 +173,3 @@ word-wrap: break-word;
 position: relative;
 top: 0px;
 }
-
-</style>
-</html>
