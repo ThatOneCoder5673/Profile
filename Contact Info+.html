@@ -53,7 +53,8 @@ var i = 0;
 function MultiTaskSwitch() {
 var x = document.getElementById("multitask"); 
     x.innerHTML = skills[i++];
-    if(i == skills.length) {i = 0;}
+    if(i == skills.length) {i = 0;};
+    if(skills[i] == skills[3]) {x.style.fontSize = "19px"; x.style.top = "5px";};
 }
 var skills1 = ["Excel","Word","Power Bi","Power Point"];
 var i = 0;
@@ -67,7 +68,7 @@ var x = document.getElementById("multitask1");
   
 }
 
-var skills2 = ["Multi Tasking","Problem Solving","Customer Service","Team Player"];
+var skills2 = ["Critical Thinking","Leadership","Creativity","Time Mgmt"];
 var i = 0;
 function MultiTaskSwitch2() {
 var x = document.getElementById("multitask2"); 

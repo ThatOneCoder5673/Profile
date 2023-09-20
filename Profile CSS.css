@@ -148,8 +148,8 @@ p {
   color: lime; 
   text-align: center; 
   word-wrap: break-word;
-  position: relative;
-  top: 0px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 .bottomskill {
   font-size: 20px; 
