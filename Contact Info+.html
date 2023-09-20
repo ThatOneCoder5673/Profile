@@ -61,7 +61,8 @@ function MultiTaskSwitch1() {
 var x = document.getElementById("multitask1"); 
     x.innerHTML = skills1[i++];
     if(i == skills1.length) {i = 0;};
-    if(i == skills1[0]) {x.classList.replace("skillsset","bottomskill")}
+    if(skills1[i] == skills1[1] || skills1[i] == skills1[2] || skills1[i] == skills1[3])
+     {x.classList.replace("skillsset","bottomskill")}
     else {x.className = "skillsset"};
   
 }
@@ -71,7 +72,7 @@ var i = 0;
 function MultiTaskSwitch2() {
 var x = document.getElementById("multitask2"); 
     x.innerHTML = skills2[i++];
-    if(i == skills2.length)  i = 0;
+    if(i == skills2.length) {i = 0;} 
 }
 
 </script>
