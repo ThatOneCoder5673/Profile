@@ -169,3 +169,7 @@ word-wrap: break-word;
 position: relative;
 top: 0px;
 }
+.hide {
+ display: none;
+
+}
