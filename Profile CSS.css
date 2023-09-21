@@ -141,6 +141,7 @@ p {
   border: solid 5px aqua;
   border-radius: 8px;
   background-color: inherit;
+  padding: 10px;
 }
 .specskill {
   font-size: 20px; 
