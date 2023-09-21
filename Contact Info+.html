@@ -33,18 +33,18 @@ Skills
 </div>
 <br>
 <div class="MyInfo">
-<button onclick="SwitchPic()" style="background-color: black; border-radius: 25px; border: solid 2px aqua; width: 150px; height: 35px; font-family: Poppins; color: white; font-size: 20px;">Contact Info</button>
+<button onclick="ShowContact(); MakeBig()" style="background-color: black; border-radius: 25px; border: solid 2px aqua; width: 150px; height: 35px; font-family: Poppins; color: white; font-size: 20px;">Contact Info</button>
 </div>
 <div class="row">
-    <div class="hide">
+    <div id="mycontact" class="hide">
 <div class="column3">
-<p id="myEmail" style="text-align: center; color:white;"><b style="color: aqua;">Phone Number: <br></b>(810) 447-2182</p>
+<p id="myNumber" style="color: white; background-color: Black; border-radius: 8px; margin-left: 10px; margin-right: 10px; text-align: center; border: 2px solid black;"><b style="color: aqua;">Phone Number: <br></b>(810) 447-2182</p>
 </div>
 <div class="column3">
-<p style="text-align: center; color:white;"><b style="color: aqua;">Email: <br></b><span style="text-decoration-line: underline;">katlynnkhavens@gmail.com</span></p>
+<p id="myEmail"style="color: white; background-color: Black; border-radius: 8px; margin-left: 10px; margin-right: 10px; text-align: center; border: 2px solid black;"><b style="color: aqua;">Email: <br></b><span style="text-decoration-line: underline;">katlynnkhavens@gmail.com</span></p>
 </div>
 <div class="column3">
-<p style="text-align: center; color:white;"><b style="color: aqua;">Address:<br></b>York, PA</p></div>
+<p id="myAddress" style="color: white; background-color: Black; border-radius: 8px; margin-left: 10px; margin-right: 10px; text-align: center; border: 2px solid black;"><b style="color: aqua;">Address:<br></b>York, PA</p></div>
 </div>
 </div>
 </body>
@@ -79,6 +79,18 @@ var x = document.getElementById("multitask2");
      {x.classList.replace("skillsset","bottomskill")}
     else {x.className = "skillsset"};
 }
-
+function ShowContact() {
+    var x = document.getElementById("mycontact")
+    if (x.style.display === "none") {x.style.display = "flex";}
+    else {x.style.display = "none"};
+}
+function MakeBig() {
+    var x = document.getElementById("myEmail")
+    var y = document.getElementById("myPhone")
+    var z = document.getElementById("myAddress")
+    x.style.transform = "transform: scale(2,3)";
+    y.style.transform = "transform: scale(2,3)";
+    z.style.transform = "transform: scale(2,3)";
+}
 </script>
 </html>
