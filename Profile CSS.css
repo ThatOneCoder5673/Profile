@@ -4,13 +4,13 @@
   padding: 36px 38px;
 }
 
-.material-icons:hover {
+#home:hover {
   transform: rotate(360deg);
 }
 
 .material-icons {
   color: aqua;
-  transition: transform 1s ease-in-out;
+  
 }
 
 .circle {
