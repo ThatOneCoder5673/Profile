@@ -33,7 +33,7 @@ Skills
 </div>
 <br>
 <div class="MyInfo">
-<button onclick="ShowContact(); MakeBig()" style="background-color: black; border-radius: 25px; border: solid 2px aqua; width: 150px; height: 35px; font-family: Poppins; color: white; font-size: 20px;">Contact Info</button>
+<button onmouseover="MakeBig()" onclick="ShowContact()" style="background-color: black; border-radius: 25px; border: solid 2px aqua; width: 150px; height: 35px; font-family: Poppins; color: white; font-size: 20px;">Contact Info</button>
 </div>
 <div class="row">
     <div id="mycontact" class="hide">
@@ -88,9 +88,9 @@ function MakeBig() {
     var x = document.getElementById("myEmail")
     var y = document.getElementById("myPhone")
     var z = document.getElementById("myAddress")
-    x.style.transform = "transform: scale(2,3)";
-    y.style.transform = "transform: scale(2,3)";
-    z.style.transform = "transform: scale(2,3)";
+    x.transition = "transform: scale(2,3)";
+    y.transition = "transform: scale(2,3)";
+    z.transition = "transform: scale(2,3)";
 }
 </script>
 </html>
