@@ -1,3 +1,8 @@
+body {
+  background-image: url("https://media.istockphoto.com/id/1285395672/photo/abstract-futuristic-with-connection-lines-on-blue-background-plexus-structure-concept-of.jpg?b=1&s=612x612&w=0&k=20&c=AZwPyEY1H04PwBLvEIR8khtLRA-RzozIm5OeIPgQJRY=");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .llogo {
   width: 450px;
   height: 450px;
@@ -171,4 +176,17 @@ top: 0px;
 .hide {
  display: none;
 
+}
+.profimg {
+  text-align: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+.polpic {
+  margin-bottom: 10px;
+  background-color: white;
+  width: 20%;
 }

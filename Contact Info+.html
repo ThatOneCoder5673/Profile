@@ -1,6 +1,7 @@
 <!doctype html>
 <title>Contact Information</title>
 <head>
+    
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="Profile CSS.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
@@ -15,7 +16,7 @@
 <body>
 <div class="row">
  <div class="column"><br>
- <div class="blackborder">
+ <div style="background-color: aliceblue;" class="blackborder">
 <h1 style="font-family: Poppins; text-shadow: 4px 4px 5px grey;">About Me</h1>
 <p>Hi, my name is Katlynn Cleck. My current role is an Operations Administrator at GameStop. I have worked in this role for two years, and during this time obtained an Associate's in Office Administration.</p>
 <p>I am looking for an oppurtunity to grow and pursue my new passion: coding. I am pursuing certification in full stack development and have obtained 2 of the 12 certficates required.</p>
@@ -23,12 +24,15 @@
 </div>
 </div>
  <div class="column">
-<h2 style="font-family: Poppins; text-shadow: 4px 4px 5px grey;">
+<h2 style="font-family: Poppins; text-shadow: 4px 4px 5px black; color:white;">
 Skills
 </h2>
 <div style="margin-bottom: 15px;" class="circle skills"><p class= "skillsset" onclick="MultiTaskSwitch()" id="multitask">Click<br> Me</p></div>
 <div style="margin-bottom: 15px;" class="circle skills"><p class= "skillsset" onclick="MultiTaskSwitch1();" id="multitask1">Click<br> Me</p></div>
 <div style="margin-bottom: 15px;" class="circle skills"><p class= "skillsset" onclick="MultiTaskSwitch2()" id="multitask2">Show<br> Me</p></div>
+<br><div class="polpic">
+<img style="text-align: center;" class="profimg" src="https://media.licdn.com/dms/image/D4E03AQGMkwTDaFqP_w/profile-displayphoto-shrink_200_200/0/1689728880062?e=1700697600&v=beta&t=goQV_r2dU66v0MG02RxL9oK1l0eq5v5vm_N3cP15yP0">
+</div>
 </div>
 </div>
 <br>
@@ -66,7 +70,6 @@ var x = document.getElementById("multitask1");
     if(skills1[i] == skills1[1] || skills1[i] == skills1[2] || skills1[i] == skills1[3])
      {x.classList.replace("skillsset","bottomskill")}
     else {x.className = "skillsset"};
-  
 }
 
 var skills2 = ["Critical Thinking","Leader<wbr>ship","Creativity","Time Mgmt"];
