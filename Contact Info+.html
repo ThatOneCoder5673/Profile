@@ -28,8 +28,8 @@
 Skills
 </h2>
 <div style="margin-bottom: 15px;" class="circle skills"><p class= "skillsset" onclick="MultiTaskSwitch()" id="multitask">Click<br> Me</p></div>
-<div style="margin-bottom: 15px;" class="circle skills"><p class= "skillsset" onclick="MultiTaskSwitch1();" id="multitask1">Click<br> Me</p></div>
-<div style="margin-bottom: 15px;" class="circle skills"><p class= "skillsset" onclick="MultiTaskSwitch2()" id="multitask2">Show<br> Me</p></div>
+<div style="margin-bottom: 15px;" class="circle skills"><p class= "skillsset" onclick="MultiTaskSwitch1();" id="multitask1">To<br> Display</p></div>
+<div style="margin-bottom: 15px;" class="circle skills"><p class= "skillsset" onclick="MultiTaskSwitch2()" id="multitask2">My<br> Skills</p></div>
 <br><div class="polpic">
 <img class="profimg" src="https://media.licdn.com/dms/image/D4E03AQGMkwTDaFqP_w/profile-displayphoto-shrink_200_200/0/1689728880062?e=1700697600&v=beta&t=goQV_r2dU66v0MG02RxL9oK1l0eq5v5vm_N3cP15yP0"/>
 <p style="position: relative; bottom: 9px; text-align: center; font-size: 17px;">Katlynn Cleck</p>
@@ -51,6 +51,10 @@ Skills
 <div class="column3">
 <p id="myAddress" style="color: white; background-color: Black; border-radius: 8px; margin-left: 10px; margin-right: 10px; text-align: center; border: 2px solid black;"><b style="color: aqua;">Address:<br></b>York, PA</p></div>
 </div>
+</div>
+<div class="LoginModal"></div>
+<div class="LogBox">
+    
 </div>
 </body>
 <script>
@@ -84,7 +88,7 @@ var x = document.getElementById("multitask2");
     else {x.className = "skillsset"};
 }
 function ShowContact() {
-    var x = document.getElementById("mycontact")
+    var x = document.getElementById("mycontact");
     if (x.style.display === "none") {x.style.display = "flex";}
     else {x.style.display = "none"};
 }
