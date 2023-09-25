@@ -39,31 +39,32 @@ Skills
 </div>
 <br>
 <div class="MyInfo">
-<button onmouseover="MakeBig()" onclick="ShowContact()" style="background-color: black; border-radius: 25px; border: solid 2px aqua; font-family: Poppins; color: white; font-size: 20px;">My Contact Info</button>
+<button onmouseover="MakeBig()" onclick="ShowLogin(); ShowIf()" style="background-color: black; border-radius: 25px; border: solid 2px aqua; font-family: Poppins; color: white; font-size: 20px;">My Contact Info</button>
 </div>
 <div class="row">
     <div id="mycontact" class="hide">
 <div class="column3">
-<p id="myNumber" style="color: white; background-color: Black; border-radius: 8px; margin-left: 15px; margin-right: 15px; text-align: center; border: 2px solid black;"><b style="color: aqua;">Phone Number: <br></b>(810) 447-2182</p>
+<p id="myNumber" class="ContactInfo"><b style="color: aqua;">Phone Number: <br></b>(810) 447-2182</p>
 </div>
 <div class="column3">
-<p id="myEmail"style="color: white; background-color: Black; border-radius: 8px; margin-left: 15px; margin-right: 15px; text-align: center; border: 2px solid black;"><b style="color: aqua;">Email: <br></b><span style="text-decoration-line: underline;">katlynnkhavens@gmail.com</span></p>
+<p id="myEmail" class="ContactInfo"><b style="color: aqua;">Email: <br></b><span style="text-decoration-line: underline;">katlynnkhavens@gmail.com</span></p>
 </div>
 <div class="column3">
-<p onclick="ShowLogin()" id="myAddress" style="color: white; background-color: Black; border-radius: 8px; margin-left: 15px; margin-right: 15px; text-align: center; border: 2px solid black;"><b style="color: aqua;">Address:<br></b>York, PA</p></div>
+<p id="myAddress" class="ContactInfo"><b style="color: aqua;">Address:<br></b>York, PA</p></div>
 </div>
 </div>
-<div id="LoginModalId" class="LoginModal"></div>
-<div class="LogBox">
+<div id="LoginModalId" class="LoginModal hide">
+<div id="LoginBox" class="LogBox">
     <p style="font-size: 20px; text-align: center; font-weight: bold;">LogIn</p>
     <p style="text-align: center; font-family: cursive;">Please enter in your login information below:</p>
     <div class="LoginEnter">
     <p>Username</p>
-    <input type="text">
+    <input type="text"></input>
     <p>Password</p>
-    <input type="text"></div>
- <button style="position: relative; top: 55px; left: 215px;">Submit</button>
- <button style="position: relative; top: 55px; left: 215px;">Cancel</button>
+    <input type="text"></input></div>
+ <button onclick="ShowContact(); CloseLogin()" style="position: relative; top: 55px; left: 215px;">Submit</button>
+ <button onclick="CloseLogin()" style="position: relative; top: 55px; left: 215px;">Cancel</button>
+</div>
 </div>
 </body>
 </html>

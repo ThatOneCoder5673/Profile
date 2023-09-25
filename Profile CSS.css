@@ -200,7 +200,6 @@ top: 0px;
   overflow: auto;
   left: 0;
   top: 0;
-  display: none;
 }
 .LogBox {
   position: fixed;
@@ -210,7 +209,7 @@ top: 0px;
   top: 300px;
   left: 680px;
   border: 2px solid black;
-  display: none;
+  z-index: 2;
   
 }
 .LoginEnter {
@@ -218,4 +217,13 @@ top: 0px;
   position: relative;
   top: 19px;
 
+}
+.ContactInfo {
+  color: white; 
+  border-radius: 8px; 
+  margin-left: 15px; 
+  margin-right: 15px; 
+  text-align: center; 
+  border: 2px solid black;
+  background-color: black;
 }
