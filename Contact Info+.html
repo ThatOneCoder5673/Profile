@@ -49,10 +49,10 @@ Skills
 <p id="myEmail"style="color: white; background-color: Black; border-radius: 8px; margin-left: 10px; margin-right: 10px; text-align: center; border: 2px solid black;"><b style="color: aqua;">Email: <br></b><span style="text-decoration-line: underline;">katlynnkhavens@gmail.com</span></p>
 </div>
 <div class="column3">
-<p id="myAddress" style="color: white; background-color: Black; border-radius: 8px; margin-left: 10px; margin-right: 10px; text-align: center; border: 2px solid black;"><b style="color: aqua;">Address:<br></b>York, PA</p></div>
+<p onclick="ShowLogin()" id="myAddress" style="color: white; background-color: Black; border-radius: 8px; margin-left: 10px; margin-right: 10px; text-align: center; border: 2px solid black;"><b style="color: aqua;">Address:<br></b>York, PA</p></div>
 </div>
 </div>
-<div class="LoginModal"></div>
+<div id="LoginModalId" class="LoginModal"></div>
 <div class="LogBox">
     <p style="font-size: 20px; text-align: center; font-weight: bold;">LogIn</p>
     <p style="text-align: center; font-family: cursive;">Please enter in your login information below:</p>
@@ -74,7 +74,7 @@ var x = document.getElementById("multitask");
     if(i == skills.length) {i = 0;};
     if(skills[i] == skills[3]) {x.style.fontSize = "19px"; x.style.top = "5px";};
 }
-var skills1 = ["Excel","Word","Power Bi","Power Point"];
+var skills1 = ["Excel","Word","Power BI","Power Point"];
 var i = 0;
 function MultiTaskSwitch1() {
 var x = document.getElementById("multitask1"); 
@@ -98,6 +98,11 @@ var x = document.getElementById("multitask2");
 function ShowContact() {
     var x = document.getElementById("mycontact");
     if (x.style.display === "none") {x.style.display = "flex";}
+    else {x.style.display = "none"};
+}
+function ShowLogin() {
+    var x = document.getElementById("LoginModalId");
+    if (x.style.display === "none") {x.style.display = "block";}
     else {x.style.display = "none"};
 }
 
