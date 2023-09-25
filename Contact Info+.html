@@ -57,12 +57,13 @@ Skills
 <div id="LoginBox" class="LogBox">
     <p style="font-size: 20px; text-align: center; font-weight: bold;">LogIn</p>
     <p style="text-align: center; font-family: cursive;">Please enter in your login information below:</p>
+    <form>
     <div class="LoginEnter">
-    <p>Username</p>
+    <label><p>Username</p></label>
     <input type="text"></input>
-    <p>Password</p>
-    <input type="text"></input></div>
- <button onclick="ShowContact(); CloseLogin()" style="position: relative; top: 55px; left: 215px;">Submit</button>
+    <label><p>Password</p></label>
+    <input type="password"></input></form></div>
+ <input type="submit" onclick="ShowContact(); CloseLogin()" style="position: relative; top: 55px; left: 215px;"></button>
  <button onclick="CloseLogin()" style="position: relative; top: 55px; left: 215px;">Cancel</button>
 </div>
 </div>
