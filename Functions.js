@@ -29,15 +29,12 @@ var x = document.getElementById("multitask2");
 }
 function ShowContact() {
     var x = document.getElementById("mycontact");
-    x.style.display = "flex";
+    if (x.style.display === "none") {x.style.display = "block";}
+    else {x.style.display = "none"};
 }
 function ShowLogin() {
     var x = document.getElementById("LoginModalId");
     if (x.style.display === "none") {x.style.display = "block";}
     else {x.style.display = "none"};
 }
-function CloseLogin() {
-    var x = document.getElementById("LoginModalId");
-    if (x.style.display === "none") {x.style.display = "block";}
-    else {x.style.display = "none"};
-}
+
