@@ -27,14 +27,29 @@ var x = document.getElementById("multitask2");
      {x.classList.replace("skillsset","bottomskill")}
     else {x.className = "skillsset"};
 }
-function ShowContact() {
-    var x = document.getElementById("mycontact");
-    if (x.style.display === "none") {x.style.display = "block";}
-    else {x.style.display = "none"};
-}
+
 function ShowLogin() {
     var x = document.getElementById("LoginModalId");
     if (x.style.display === "none") {x.style.display = "block";}
     else {x.style.display = "none"};
 }
+function CloseLogin() {
+    var x = document.getElementById("LoginModalId");
+    if (x.style.display === "none") {x.style.display = "block";}
+    else {x.style.display = "none"};
+}
+/*The code below is for the Login
+  The password is: password
+  The uesrname is: admin */
 
+function ValidateLogIn() {
+    var NotValid = true;
+    var username = document.forms["LoginForm"]["UsernameName"].value;
+    var password = document.forms["LoginForm"]["PasswordName"].value;
+
+    if (username == "Admin" && password == "password") {
+        var x = document.getElementById("mycontact");
+        x.style.display = "flex";
+        notValid = false; }
+    
+}

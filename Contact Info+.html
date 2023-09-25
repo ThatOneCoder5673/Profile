@@ -39,7 +39,7 @@ Skills
 </div>
 <br>
 <div class="MyInfo">
-<button onmouseover="MakeBig()" onclick="ShowLogin(); ShowIf()" style="cursor: pointer; background-color: black; border-radius: 25px; border: solid 2px aqua; font-family: Poppins; color: white; font-size: 20px;">My Contact Info</button>
+<button onmouseover="MakeBig()" onclick="ShowLogin()" style="cursor: pointer; background-color: black; border-radius: 25px; border: solid 2px aqua; font-family: Poppins; color: white; font-size: 20px;">My Contact Info</button>
 </div>
 <div class="row">
     <div id="mycontact" class="hide">
@@ -57,14 +57,17 @@ Skills
 <div id="LoginBox" class="LogBox">
     <p style="font-size: 20px; text-align: center; font-weight: bold;">LogIn</p>
     <p style="text-align: center; font-family: cursive;">Please enter in your login information below:</p>
-    <form>
     <div class="LoginEnter">
+    <form id="LoginForm">
     <label><p>Username</p></label>
-    <input type="text"></input>
+    <input name="UsernameName" type="text"></input>
     <label><p>Password</p></label>
-    <input type="password"></input></form><br><br>
- <input type="submit" onclick="ShowContact(); ShowLogin()" style="text-align: center;"></button>
- <button onclick="ShowLogin()" style="text-align: center;">Cancel</button>
+    <input name="PasswordName" type="password"></input>
+    </form>
+    <br><br>
+ <button onclick="ValidateLogIn(); ShowLogin()" style="text-align: center;">Submit</button>
+ <button onclick="CloseLogin()" style="text-align: center;">Cancel</button>
+</div>
 </div>
 </div>
 </body>
