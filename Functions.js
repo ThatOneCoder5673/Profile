@@ -50,6 +50,10 @@ function ValidateLogIn() {
     if (username == "Admin" && password == "password") {
         var x = document.getElementById("mycontact");
         x.style.display = "flex";
+        document.getElementById("errormsg").style.display = "none";
         notValid = false; }
+        else {
+            document.getElementById("errormsg").style.display = "block";
+                                }
     
 }
