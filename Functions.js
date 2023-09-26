@@ -40,7 +40,7 @@ function CloseLogin() {
 }
 /*The code below is for the Login
   The password is: password
-  The uesrname is: admin */
+  The uesrname is: Admin */
 
 function ValidateLogIn() {
     var NotValid = true;
