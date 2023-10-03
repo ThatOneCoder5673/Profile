@@ -46,14 +46,18 @@ function ValidateLogIn() {
     var NotValid = true;
     var username = document.forms["LoginForm"]["UsernameName"].value;
     var password = document.forms["LoginForm"]["PasswordName"].value;
-
+    var login = document.getElementById("LoginModalId");
+    login.style.display = "block";
+    
     if (username == "Admin" && password == "password") {
         var x = document.getElementById("mycontact");
+               login.style.display = "none";
         x.style.display = "flex";
         document.getElementById("errormsg").style.display = "none";
         notValid = false; }
         else {
             document.getElementById("errormsg").style.display = "block";
+            login.style.display = "block"
                                 }
+    }
     
-}
