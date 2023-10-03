@@ -91,6 +91,9 @@ p {
   background-color: black;
   overflow: hidden;
   text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .topnav a {
@@ -104,7 +107,7 @@ p {
   padding-top: 15px;
   text-decoration: none;
   text-align: center;
-}
+    }
 
 .topnav a.split {  
   float: right;
@@ -146,6 +149,7 @@ p {
   border-radius: 8px;
   background-color: inherit;
   padding: 10px;
+  margin-top: 25px;
 }
 .specskill {
   font-size: 20px; 
