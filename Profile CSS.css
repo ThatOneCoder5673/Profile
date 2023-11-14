@@ -55,6 +55,15 @@ body {
   }
 }
 
+@media screen and (max-width: 570px) {
+  #myresume {
+    display: none;
+  }
+  #linkedinprof {
+    display: none;
+  }
+}
+
 h3 {
   font-family: Poppins;
 }
